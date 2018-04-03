@@ -5,10 +5,10 @@ package design.builder;
  */
 public class Milk extends Drink {
     public String name() {
-        return null;
+        return "milk";
     }
 
     public double price() {
-        return 0;
+        return 6;
     }
 }
