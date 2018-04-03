@@ -1,9 +1,9 @@
-package design.factory;
+package design.absfactory;
 
 /**
  * @author chenzhangyan  on 2018/3/30.
  */
-public class ShapeFactory {
+public class ShapeFactory extends AbstractFactory{
 
     public Shape getShape(String shape) {
         if ("CIRCLE".equalsIgnoreCase(shape)) {
@@ -11,6 +11,10 @@ public class ShapeFactory {
         } else if ("SQUARE".equalsIgnoreCase(shape)) {
             return new Square();
         }
+        return null;
+    }
+
+    public Color getColor(String color) {
         return null;
     }
 }
