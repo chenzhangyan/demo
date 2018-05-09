@@ -9,5 +9,9 @@ public class Demo {
         drawerProxy.draw();
         drawerProxy.draw();
         drawerProxy.draw();
+
+        DynamicProxy dynamicProxy = new DynamicProxy();
+        Draw draw = (Draw) dynamicProxy.bind(new Drawer());
+        draw.draw();
     }
 }
